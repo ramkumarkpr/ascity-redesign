@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Venue :: 11th International Conference on Advances in Computer Science and Information Technology (ACSTY
+        2025)</title>
+</head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="./css/main.css">
+
+<style>
+    /*section Animation  */
+    .images {
+        position: relative;
+        top: 2rem;
+        width: 100%;
+        height: 30rem;
+        margin: auto;
+        text-align: center;
+        overflow: hidden;
+        border: solid white;
+    }
+
+    .header-h1 {
+        font-weight: bolder;
+        margin-top: 7rem;
+        margin-bottom: 5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgb(5, 4, 4);
+        padding: 2rem;
+        filter: opacity(0.5);
+        border: solid;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 8px rgb(0, 0, 0);
+    }
+
+
+    /* All images */
+    .fade-slide {
+        position: absolute;
+        width: 100%;
+        height: 30rem;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+        animation: fadeEffect 9s infinite;
+    }
+
+    .slide-1 {
+        background-image: url(./images/sc-img1.jpeg);
+    }
+
+    .slide-2 {
+        background-image: url(./images/sc-img2.png);
+        animation-delay: 3s;
+    }
+
+    .slide-3 {
+        background-image: url(./images/sc-img3\ \(1\).jpg);
+        animation-delay: 6s;
+    }
+
+    @keyframes fadeEffect {
+        0% {
+            opacity: 0;
+        }
+
+        8% {
+            opacity: 1;
+        }
+
+        33% {
+            opacity: 1;
+        }
+
+        41% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+</style>
+
+<body>
+
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg  navbar-dark  bg-nav p-1 fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-light ps-5 p-0 d-flex align-items-center gap-2" href="./index.html">
+                <img src="./images/logo.png" alt="" width="50" height="54">
+                <h2 class="text-light">ACSTY</h2>
+            </a>
+
+            <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"><span class="navbar-toggler-icon text-white"></span></button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header bg-secondary">
+                    <a href="./index.html">
+                        <img src="./images/logo.png" id="offcanvasRightLabel" height="70" width="70"
+                            class="rounded-circle border" alt=""></a>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body offset-color" style="background-color: rgb(221, 223, 223);">
+                    <h1 class="text-dark">ASCTY</h1>
+                    <ul class="list-unstyled">
+                        <li class="nav-item nav-link d-flex align-items-center gap-2">
+                            <i class="fa-duotone fa-solid fa-house-chimney fa-bounce  text-dark"></i>
+                            <a class="active text-dark text-decoration-none fw-bolder" aria-current="page"
+                                href="./index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item nav-link d-flex align-items-center gap-2">
+                            <i class="fa-regular fa-paper-plane fa-bounce text-dark"></i>
+                            <a class=" text-dark text-decoration-none fw-bolder" href="./Submission.html">
+                                Paper Submission
+                            </a>
+                        </li>
+
+                        <li class="nav-item nav-link d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-user-group fa-bounce text-dark"></i>
+                            <a class=" text-dark text-decoration-none fw-bolder" href="./committee.html">
+                                Paper Committe
+                            </a>
+                        </li>
+                        <li class=" nav-item nav-link  d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-calendar-days fa-bounce  text-dark"></i>
+                            <a class="text-dark text-decoration-none fw-bolder" href="./accPapers.html">
+                                Accepted Papers
+                            </a>
+                        </li>
+                        <li class="nav-item nav-link d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-building-shield fa-bounce text-dark"></i>
+                            <a class="text-dark text-decoration-none fw-bolder" href="./venue.html">
+                                Venue
+                            </a>
+                        </li>
+                        <li class="nav-item nav-link d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-phone-volume fa-fade  text-dark"></i>
+                            <a class=" text-dark text-decoration-none fw-bolder" href="./contact.html">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse ps-5" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item nav-link">
+                        <a class="active text-decoration-none text-light" aria-current="page" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./Submission.html">
+                            Paper Submission
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./committee.html">
+                            Paper Committe
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./accPapers.html">
+                            Accepted Papers
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./venue.html">
+                            Venue
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- section -->
+
+    <div class="images">
+
+        <div class="fade-slide slide-1">
+            <div class="slide-text text-slide-right">
+
+                <h3>11th International Conference on Advances in Computer Science and
+                    Information Technology (ACSTY 2025) <br>
+                </h3><br>
+                <h5>January 18 ~ 19, 2025, Zurich, Switzerland</h5>
+            </div>
+
+        </div>
+        <div class="fade-slide slide-2">
+            <div class="slide-text text-slide-left">
+
+                <h3>11th International Conference on Advances in Computer Science and
+                    Information Technology (ACSTY 2025)
+                </h3><br>
+                <h5>January 18 ~ 19, 2025, Zurich, Switzerland</h5>
+            </div>
+
+
+        </div>
+        <div class="fade-slide slide-3">
+            <div class="slide-text text-slide-top">
+
+                <h3>11th International Conference on Advances in Computer Science and
+                    Information Technology (ACSTY 2025)
+                </h3> <br>
+                <h5>January 18 ~ 19, 2025, Zurich, Switzerland</h5>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- main -->
+
+    <main class="accepted-content py-5">
+        <div class="container">
+            <h3 class="text-info text-center">Venue</h3>
+            <div class="accepted-members  shadow-lg p-4 border rounded border">
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Reach us Card -->
+
+    <div class="parent ms-3">
+        <div class="card">
+            <div class="logo">
+                <span class="circle circle1"></span>
+                <span class="circle circle2"></span>
+                <span class="circle circle3"></span>
+                <span class="circle circle4"></span>
+                <span class="circle circle5">
+                    <h4 class="top-head">ACSTY</h4>
+                </span>
+
+            </div>
+            <div class="glass"></div>
+            <div class="content">
+                <span class="title">REACH US</span>
+                <span class="text">
+                    <p>acsty@acsty2025.org</p>
+                    <p>acstyconff@yahoo.com</p>
+                </span>
+            </div>
+            <div class="bottom">
+
+                <div class="social-buttons-container">
+                    <button class="social-button .social-button1">
+                        <a href="https://www.facebook.com/AIRCCPC">
+                            <i class="fa-brands fa-facebook-f" style="color: #1d00fa;"></i>
+                        </a>
+                    </button>
+
+
+                    <button class="social-button .social-button2">
+                        <a href="https://twitter.com/AIRCCFP">
+                            <i class="fa-brands fa-twitter" style="color: #0400e6;"></i>
+                        </a>
+                    </button>
+
+                    <button class="social-button .social-button3">
+                        <a href="https://youtu.be/bk3V2rkKc_c"></a>
+                        <i class="fa-brands fa-youtube" style="color: #0715cf;"></i>
+                    </button>
+                </div>
+                <div class="view-more">
+                    <a href="./index.html">
+                        <button class="view-more-button">View more</button></a>
+                    <svg class="svg" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m6 9 6 6 6-6"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div> <br><br>
+
+    <!-- footer -->
+
+    <footer class="contact-footer">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class=" d-flex flex-column gap-3">
+                <a href="https://acsty2025.org/contact" class="text-decoration-none text-light">Contact</a>
+
+                <a href="mailto:acsty@acsty2025.org" class="text-decoration-none text-light">acsty@acsty2025.org</a>
+            </div>
+            <div class="d-flex flex-column media-links">
+                <a href="https://www.facebook.com/AIRCCPC" target="_blank">
+                    <i class=" bi-facebook text-primary" style="font-size: 30px;"></i>
+                </a>
+
+                <a href="https://twitter.com/AIRCCFP" target="_blank">
+                    <i class=" bi-twitter text-info" style="font-size: 30px;"></i>
+                </a>
+
+                <a href="https://youtu.be/bk3V2rkKc_c" target="_blank">
+                    <i class=" bi-youtube text-danger" style="font-size: 30px;"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="rights text-center p-3">
+            <span class="text-light">All Rights Reserved ® ACSTY 2025</span>
+        </div>
+
+
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
